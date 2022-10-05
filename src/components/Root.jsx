@@ -1,6 +1,10 @@
+import useRouter from '../hooks/useRouter'
+
 function Root() {
+	const { navigate } = useRouter()
+
 	const handleClick = () => {
-		window.history.pushState('2', '', '/about')
+		navigate('2', '/about')
 	}
 	return (
 		<>
