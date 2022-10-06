@@ -8,7 +8,8 @@ function Router({ children }) {
 
 	useEffect(() => {
 		const changeLocation = () => {
-			setCurrent(window.location.pathname)
+			const path = window.location.pathname
+			setCurrent(path)
 		}
 		window.addEventListener('popstate', changeLocation)
 
