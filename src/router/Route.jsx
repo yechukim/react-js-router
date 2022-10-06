@@ -1,4 +1,4 @@
-function Route({ component }) {
+function Route() {
 	return <></>
 }
 

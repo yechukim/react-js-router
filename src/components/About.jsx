@@ -2,7 +2,8 @@ import useRouter from '../hooks/useRouter'
 
 function About() {
 	const { navigate } = useRouter()
-	const handleClick = () => {
+
+	const handleClick = (e) => {
 		navigate('1', '/')
 	}
 	return (
